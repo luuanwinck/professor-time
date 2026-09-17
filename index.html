@@ -73,8 +73,8 @@
     }
 
     .side {
-      width: 230px;
-      flex: 0 0 230px;
+      width: 220px;
+      flex: 0 0 240px;
       background: linear-gradient(180deg, #fafdff 0%, #edf6fd 100%);
       border-right: 1px solid #e1edf7;
       padding: 27px 12px 18px;
@@ -134,7 +134,7 @@
 
     .brandtext span {
       display: block;
-      font-size: 9px;
+      font-size: 10px;
       color: var(--blue);
       margin-top: 4px;
       font-weight: 700
@@ -228,12 +228,12 @@
     }
 
     .search {
-      width: 390px;
+      width: 500px;
       max-width: 48%;
       border: 0;
       outline: 0;
       background: #eaf3fb;
-      border-radius: 25px;
+      border-radius: 10px;
       padding: 12px 18px 12px 42px;
       color: var(--text);
       font-size: 11px;
@@ -489,7 +489,7 @@
     }
 
     .eyebrow {
-      font-size: 10px;
+      font-size: 12px;
       letter-spacing: .4px;
       color: var(--blue);
       font-weight: 800
@@ -924,7 +924,7 @@
     }
 
     .field label {
-      font-size: 11px;
+      font-size: 16px;
       font-weight: 800;
       display: block;
       margin-bottom: 8px
@@ -940,7 +940,7 @@
       border-radius: 12px;
       padding: 12px 13px;
       outline: 0;
-      font-size: 12px
+      font-size: 15px
     }
 
     .input:focus,
@@ -967,7 +967,7 @@
       background: var(--surface);
       color: var(--text2);
       border-radius: 999px;
-      font-size: 11px
+      font-size: 13px
     }
 
     .pill.sel {
@@ -988,7 +988,7 @@
       background: var(--surface);
       color: var(--text2);
       border-radius: 11px;
-      font-size: 11px
+      font-size: 13px
     }
 
     .obj.sel {
@@ -1034,14 +1034,14 @@
     }
 
     .card h2 {
-      font-size: 15px;
+      font-size: 22px;
       margin: 0 0 8px
     }
 
     .card p,
     .card li {
       color: var(--muted);
-      font-size: 11px;
+      font-size: 14px;
       line-height: 1.6
     }
 
@@ -1085,7 +1085,7 @@
       color: var(--text2);
       border-radius: 999px;
       padding: 7px 10px;
-      font-size: 10px
+      font-size: 12px
     }
 
     .chatrow {
@@ -1112,7 +1112,7 @@
       text-align: center;
       color: var(--muted);
       padding: 32px;
-      font-size: 11px
+      font-size: 13px
     }
 
     /* DARK MODE — preserva a identidade pastel, ajustando contraste e proporção */
@@ -1417,7 +1417,7 @@
     @media(max-width:1000px) {
       .side {
         width: 205px;
-        flex-basis: 205px
+        flex-basis: 240px
       }
 
       .wrap {
@@ -1489,12 +1489,12 @@
       }
 
       .mobile-brandtext b {
-        font-size: 15px;
+        font-size: 22px;
         line-height: 1.05
       }
 
       .mobile-brandtext span {
-        font-size: 8px;
+        font-size: 13px;
         margin-top: 3px
       }
 
@@ -1844,7 +1844,7 @@
     src="${S.theme === 'dark' ? 'brand-dark.png' : 'brand.png'}"
     alt="Professor Time"
     class="brand-logo"
-    style="width:40px;height:40px;object-fit:contain;flex-shrink:0;"
+    style="width:62px;height:62px;object-fit:contain;flex-shrink:0;"
   >
   <div class="brandtext">
     <b>Professor Time</b>
@@ -1861,13 +1861,13 @@
   <img
     src="${S.theme === 'dark' ? 'brand-dark.png' : 'brand.png'}"
     alt="Professor Time"
-    style="width:38px;height:38px;object-fit:contain;flex-shrink:0;"
+    style="width:60px;height:60px;object-fit:contain;flex-shrink:0;"
   >
   <div class="mobile-brandtext">
     <b>Professor Time</b>
     <span>Seu aliado na educação</span>
   </div>
-</div><div class="search-wrap"><i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i><input class="search" placeholder="O que você gostaria de fazer hoje?" oninput="searchProjects(this.value)"></div><div class="topright"><div class="theme-toggle"><button class="${S.theme === 'light' ? 'active' : ''}" onclick="setTheme('light')"><i class="fa-regular fa-sun"></i></button><button class="${S.theme === 'dark' ? 'active' : ''}" onclick="setTheme('dark')"><i class="fa-regular fa-moon"></i></button></div><button class="bell" aria-label="Notificações"><i class="fa-regular fa-bell"></i></button><div class="profile" onclick="toggleProfileMenu()" role="button" tabindex="0"><div class="avatar"><i class="fa-solid fa-user" style="color: rgba(116, 182, 252, 0.74);"></i></div><div><b>Olá, Ana</b><span>Professora</span></div><span class="chev"><i class="fa-solid fa-chevron-down"></i></span><div class="profile-menu" id="profileMenu"><button onclick="event.stopPropagation();go('settings')"><i class="fa-regular fa-user"></i> Meu perfil</button><button onclick="event.stopPropagation();go('settings')"><i class="fa-solid fa-gear"></i> Configurações</button><button class="logout" onclick="event.stopPropagation();profileLogout()"><i class="fa-solid fa-arrow-right-from-bracket"></i> Sair</button></div></div></div><button class="mobile-menu" onclick="toggleMobileMenu()" aria-label="Abrir menu"><i class="fa-solid fa-bars"></i></button></header><div class="mobile-drawer-backdrop" id="drawerBackdrop" onclick="closeMobileMenu()"></div><aside class="mobile-drawer" id="mobileDrawer"><div class="drawer-head"><div class="drawer-brand">
+</div><div class="search-wrap"><i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i><input class="search" placeholder="O que você gostaria de fazer hoje?" oninput="searchProjects(this.value)"></div><div class="topright"><div class="theme-toggle"><button class="${S.theme === 'light' ? 'active' : ''}" onclick="setTheme('light')"><i class="fa-regular fa-sun"></i></button><button class="${S.theme === 'dark' ? 'active' : ''}" onclick="setTheme('dark')"><i class="fa-regular fa-moon"></i></button></div><button class="bell" aria-label="Notificações"><i class="fa-regular fa-bell"></i></button><div class="profile" onclick="toggleProfileMenu()" role="button" tabindex="0"><div class="avatar"><i class="fa-solid fa-user" style="color: rgba(116, 182, 252, 0.74);"></i></div><div><b>Olá, Ana</b><span>Professora</span></div><span class="chev"><i class="fa-solid fa-chevron-down"></i></span><div class="profile-menu" id="profileMenu"><button onclick="event.stopPropagation();go('settings')"><i class="fa-solid fa-user"></i> Meu perfil</button><button onclick="event.stopPropagation();go('settings')"><i class="fa-solid fa-gear"></i> Configurações</button><button class="logout" onclick="event.stopPropagation();profileLogout()"><i class="fa-solid fa-arrow-right-from-bracket"></i> Sair</button></div></div></div><button class="mobile-menu" onclick="toggleMobileMenu()" aria-label="Abrir menu"><i class="fa-solid fa-bars"></i></button></header><div class="mobile-drawer-backdrop" id="drawerBackdrop" onclick="closeMobileMenu()"></div><aside class="mobile-drawer" id="mobileDrawer"><div class="drawer-head"><div class="drawer-brand">
   <img
     src="${S.theme === 'dark' ? 'brand-dark.png' : 'brand.png'}"
     alt="Professor Time"
